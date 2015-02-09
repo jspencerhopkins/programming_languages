@@ -1,0 +1,15 @@
+<h1>Similarities b/w Ruby & Javascript</h1>
+
+<h3><%= link_to 'New Similarity', new_similarity_path %></h3>
+
+<ol>
+	<% @similarities.each do |s| %>
+		<li>
+			<%= link_to s.title, similarity_path(s.id) %>
+		</li>
+	<% end %>
+</ol>
+
+
+
+<%= link_to 'Back', root_url %>
