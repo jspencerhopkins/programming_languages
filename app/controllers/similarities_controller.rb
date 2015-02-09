@@ -1,0 +1,2 @@
+class SimilaritiesController < ApplicationController
+end

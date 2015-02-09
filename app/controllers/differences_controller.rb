@@ -1,0 +1,2 @@
+class DifferencesController < ApplicationController
+end
