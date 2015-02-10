@@ -1,10 +1,10 @@
 <p>
-  <strong>Title:</strong>
+  <strong>Title:</strong><br>
   <%= @similarity.title %>
 </p>
  
 <p>
-  <strong>Text:</strong>
+  <strong>Text:</strong><br>
   <%= @similarity.text %>
 </p>
 
@@ -12,11 +12,11 @@
 	<%= link_to 'Edit', edit_similarity_path(@similarity) %>
 </p>
 
-<p>
-	<%= link_to 'Delete', similarity_path(@similarity),
+
+	<%= button_to 'Delete', similarity_path(@similarity),
               method: :delete,
               data: { confirm: 'Are you sure?' } %>
-</p>
+
 
 <p>
 	<%= link_to 'Back', similarities_path %>

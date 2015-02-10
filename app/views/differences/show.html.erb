@@ -1,0 +1,23 @@
+<p>
+  <strong>Title:</strong><br>
+  <%= @difference.title %>
+</p>
+ 
+<p>
+  <strong>Text:</strong><br>
+  <%= @difference.text %>
+</p>
+
+<p>
+	<%= link_to 'Edit', edit_difference_path(@difference) %>
+</p>
+
+
+	<%= button_to 'Delete', difference_path(@difference),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %>
+
+
+<p>
+	<%= link_to 'Back', differences_path %>
+</p>

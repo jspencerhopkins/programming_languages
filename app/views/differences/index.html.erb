@@ -1,12 +1,13 @@
 <h1>Differences b/w Ruby & Javascript</h1>
 
-
+<h3><%= link_to 'New Difference', new_difference_path %></h3>
 
 <ol>
-	<%= form_for @similarites.each do |f|
-
-
-
+	<% @differences.each do |d| %>
+		<li>
+			<%= link_to d.title, difference_path(d.id) %>
+		</li>
+	<% end %>
 </ol>
 
 
